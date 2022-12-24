@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>nth-child</title>
+    <style>
+      li {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        list-style: none;
+      }
+
+      /* first-child
+      if we want to choose the first child :first-child is used then the stylings will be added to the first child  */
+      li:first-child {
+        background: red !important;
+      }
+
+      /* last-child */
+      /* this is also as same as the first child hear last child will be selected    */
+      li:last-child {
+        background: blue;
+      }
+
+      /* nth-child selector matches every element that is the nth child, regardless of type, of its parent.*/
+
+      /* Position 3 */
+      /* hear only the third child will be selected in this case */
+      li:nth-child(3) {
+        background: purple;
+      }
+
+      /* Every 3rd */
+      /* hear nth child where 3n specifies that 3rd card and adds + 3 so 6th card +3 9th card so like this every 3rd card styles can be done  */
+      li:nth-child(3n + 0) {
+        background: orange;
+      }
+
+      /* Every 3rd after 7 */
+      /* hear 3n where every 3rd card will be targeted (+ 7) hear where after 7 cards selection will be started   */
+      li:nth-child(3n + 7) {
+        background: yellow;
+      }
+
+      /* odd */
+      /* hear odd numbers will be selected */
+      li:nth-child(odd) {
+        background: #ccc;
+      }
+
+      /* even */
+      /* hear even numbers will be selected */
+      li:nth-child(even) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+      <li>Item 7</li>
+      <li>Item 8</li>
+      <li>Item 9</li>
+      <li>Item 10</li>
+      <li>Item 11</li>
+      <li>Item 12</li>
+      <li>Item 13</li>
+      <li>Item 14</li>
+      <li>Item 15</li>
+      <li>Item 16</li>
+      <li>Item 17</li>
+      <li>Item 18</li>
+      <li>Item 19</li>
+      <li>Item 20</li>
+    </ul>
+  </body>
+</html>
